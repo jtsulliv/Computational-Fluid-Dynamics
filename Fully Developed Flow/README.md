@@ -1,0 +1,5 @@
+# Fully Developed Flow
+
+In this project two different iterative methods were implemented to solve the finite difference approximation for the governing partial differential equation (PDE) representing the x-momentum for a fully developed flow in a rectangular duct with a constant streamwise pressure gradient.  A second order accurate central finite-difference approximation (5-point formula) was implemented to solve interior nodes, while second order accurate finite-difference approximations were implemented for the Neumann boundary conditions.  The first method implemented was an explicit Point Gauss-Seidel Algorithm with Successive Over-relaxation (PSOR).  The second method implemented was an implicit Line Gauss-Seidel Algorithm with Successive Over-relaxation (LSOR). 
+
+To verify the accuracy of the numerical schemes developed, mesh refinement studies were conducted.  In order to validate the solutions, the results obtained from the two methods were compared to the analytical solution.  Optimum relaxation factors were also investigated to achieve the quickest convergence for each method (minimum number of iterations).
