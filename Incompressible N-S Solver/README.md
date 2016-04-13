@@ -1,0 +1,5 @@
+# Incompressible Navier-Stokes Solver	
+
+In this project a two-dimensional (2D) incompressible laminar flow solver is developed for a lid-driven cavity flow.  The governing Navier-Stokes and continuity equations are simplified using the vorticity-stream function formulation.  A numerical algorithm is implemented using an explicit forward time second order central space (FTCS) finite difference discretization for the vorticity transport equation.  The numerical algorithm also implements an explicit point Gauss-Seidel method with successive over-relaxation (PSOR) to solve for the stream function in order to obtain the x and y velocity components.  The algorithm is run until a steady-state solution is found, which is evaluated based on a norm of the residual vector of the vorticity and a specified convergence criterion.
+
+To verify the numerical results, a grid refinement study was conducted.  Validation of the numerical solution was performed by comparing results for velocity, vorticity, and stream function with those obtained by Ghia et al. [1]
